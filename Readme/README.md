@@ -42,8 +42,30 @@ L> ApiLafise.Tests/         # Proyecto de pruebas unitarias
 ### 1. Clona el repositorio
 
 ```bash
-git clone https://github.com/Alexander-Acu/TestBackendLafise.git
+#para el proyecot pricipal
+git clone https://github.com/Alexander-Acu/lafiserepotest.git
+
+
+## Clonar el repositorio de pruebas unitarias
+
+Para mantener una arquitectura limpia y desacoplada, las pruebas unitarias de este proyecto se encuentran en un repositorio separado.
+
+git clone https://github.com/Alexander-Acu/pruebasunitariaslafise.git
 ```
+
+de esta manera se puede agregar las pruebas unitarias al proyecto principal
+
+L> Abre el archivo de solución (.sln) del proyecto principal en Visual Studio.
+
+L> Haz clic derecho sobre la solución > Agregar > Proyecto existente....
+
+L> Selecciona el archivo .csproj del repositorio clonado (pruebasunitariaslafise).
+
+L> Una vez agregado, haz clic derecho en Dependencias del proyecto de pruebas > Agregar referencia....
+
+L> Marca el proyecto principal (ApiLafise) y guarda.
+
+
 ### 2. Abre el proyecto en Visual Studio
 
 L> Asegurate de tener instalado .NET 8 y SQLite
